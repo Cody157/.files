@@ -1,0 +1,42 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+
+    "search.exclude": {
+        "**/lib": true,
+        "**/dist": true,
+        "**/typings": true
+    },
+
+    "editor.tabSize": 2,
+    //"editor.formatOnType": true,
+    "editor.cursorStyle": "line",
+
+    "files.eol": "\n",
+    
+    "typescript.tsdk": "c:/Users/Ojo/AppData/Local/lxss/rootfs/usr/local/lib/node_modules/typescript/lib",
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnyonymousFunctions": false,
+
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnyonymousFunctions": false,
+
+    "vim.otherModesKeyBindings": [
+        {
+            "before": [ "`" ],
+            "after": [ "^" ]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+    ],
+    "vim.insertModeKeyBindings": [
+    ],
+
+    "vim.ignorecase": false,
+    "vim.useSystemClipboard": false,
+    "vim.useSolidBlockCursor": false,
+    "vim.hlsearch": true
+}

@@ -1,0 +1,75 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  // Remap ctrl+k commands to ctrl+l so they're still accessible despite my change to ctrl+l'
+  { "key": "ctrl+l ctrl+c",         "command": "editor.action.addCommentLine",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+l",         "command": "editor.action.defineKeybinding",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+d",         "command": "editor.action.moveSelectionToNextFindMatch",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l f12",            "command": "editor.action.openDeclarationToTheSide",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+u",         "command": "editor.action.removeCommentLine",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+u",         "command": "editor.action.removeCommentLine",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+i",         "command": "editor.action.showHover",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+x",         "command": "editor.action.trimTrailingWhitespace",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+l ctrl+i",         "command": "editor.debug.action.showDebugHover",
+                                    "when": "editorTextFocus && inDebugMode" },
+  { "key": "ctrl+l ctrl+0",         "command": "editor.foldAll",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+2",         "command": "editor.foldLevel2",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+3",         "command": "editor.foldLevel3",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+4",         "command": "editor.foldLevel4",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+5",         "command": "editor.foldLevel5",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+[",         "command": "editor.foldRecursively",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+]",         "command": "editor.unFoldRecursively",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+j",         "command": "editor.unfoldAll",
+                                    "when": "editorFocus" },
+  { "key": "ctrl+l ctrl+w",         "command": "workbench.action.closeAllEditors" },
+  { "key": "ctrl+l w",              "command": "workbench.action.closeEditorsInGroup" },
+  { "key": "ctrl+l f",              "command": "workbench.action.closeFolder" },
+  { "key": "ctrl+l m",              "command": "workbench.action.editor.changeLanguageMode" },
+  { "key": "ctrl+l p",              "command": "workbench.action.files.copyPathOfActiveFile" },
+  { "key": "ctrl+l r",              "command": "workbench.action.files.revealActiveFileInWindows" },
+  { "key": "ctrl+l o",              "command": "workbench.action.files.showOpenedFileInNewWindow" },
+  { "key": "ctrl+l ctrl+right",     "command": "workbench.action.focusNextGroup" },
+  { "key": "ctrl+l ctrl+left",      "command": "workbench.action.focusPreviousGroup" },
+  { "key": "ctrl+l enter",          "command": "workbench.action.keepEditor" },
+  { "key": "ctrl+l left",           "command": "workbench.action.moveActiveEditorGroupLeft" },
+  { "key": "ctrl+l right",          "command": "workbench.action.moveActiveEditorGroupRight" },
+  { "key": "ctrl+l ctrl+h",         "command": "workbench.action.output.toggleOutput" },
+  { "key": "ctrl+l ctrl+p",         "command": "workbench.action.showAllEditors" },
+  { "key": "ctrl+l e",              "command": "workbench.files.action.focusOpenEditorsView" },
+  { "key": "ctrl+l v",              "command": "markdown.showPreviewToSide" },
+
+  // Mine
+  // Find 'markers' (errors/warnings)
+  { "key": "ctrl+k",                "command": "editor.action.marker.prev",
+                                    "when": "editorTextFocus" },
+  { "key": "ctrl+j",                "command": "editor.action.marker.next",
+                                    "when": "editorTextFocus" },
+  // Change editor group
+  { "key": "alt+right",     "command": "workbench.action.focusNextGroup" },
+  { "key": "alt+left",      "command": "workbench.action.focusPreviousGroup" },
+
+  // Toggle Terminal focus
+  // For now, goes to the first editor group, not the most recently used one.
+  // following https://github.com/Microsoft/vscode/issues/11897
+  { "key": "ctrl+`",          "command": "workbench.action.terminal.focus",
+                              "when": "!terminalFocus" },
+  { "key": "ctrl+`",          "command": "workbench.action.focusFirstEditorGroup",
+                              "when": "terminalFocus" },
+
+  // Toggle error/warning view
+  { "key": "ctrl+shift+`",          "command": "workbench.actions.view.problems" }
+]
