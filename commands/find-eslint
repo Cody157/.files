@@ -1,0 +1,14 @@
+#!/bin/bash
+
+base=$(npm-base)
+linter=${base}node_modules/@ojolabs/linter/bin/eslint.js
+if [ ! -f $linter ]; then
+  linter=/usr/local/bin/eslint
+fi
+
+config=${base}.eslintrc
+if [ -f $config ]; then
+  echo "$linter --config $config" && exit
+else
+  echo "$linter" && exit
+fi

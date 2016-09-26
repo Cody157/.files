@@ -1,0 +1,6 @@
+#!/bin/bash
+
+base=$(npm-base)
+if [ -f ${base}tslint.json ]; then
+  echo --config ${base}tslint.json
+fi

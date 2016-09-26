@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -f "package.json" ]; then
+  typescript=false
+
+  if [ -f "tsconfig.json" ]; then
+    typescript=true;
+  fi
+
+  if [ $typescript -a -d "typings" ]; then
+    rm -rf typings
+  fi
+
+  rm -rf node_modules
+  npm install;
+
+  $typescript && [ ! -d typings ] && typings install
+fi

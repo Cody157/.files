@@ -1,0 +1,6 @@
+#!/bin/bash
+
+npm_base=$(npm-base)
+npm_package="${npm_base}package.json"
+
+[[ -f $npm_package ]] && echo $npm_package && exit

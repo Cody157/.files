@@ -1,0 +1,7 @@
+#!/bin/bash
+
+npm_root=$(npm root)
+npm_base=${npm_root%node_modules}
+
+#[[ -f $npm_base ]] && echo $npm_base && exit
+echo $npm_base && exit

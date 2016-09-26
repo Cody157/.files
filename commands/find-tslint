@@ -1,0 +1,10 @@
+#!/bin/bash
+
+base=$(npm-base)
+linter=${base}node_modules/tslint/bin/tslint
+
+if [ -f $linter ]; then
+  echo $linter
+else
+  echo /usr/local/bin/tslint
+fi
