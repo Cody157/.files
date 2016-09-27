@@ -1,0 +1,43 @@
+{
+  "rules": {
+    "typedef": [true,
+//      "call-signature",
+      "parameter",
+      "property-declaration"
+    ],
+    "label-position": true,
+    "no-console": [true, "log", "info", "warn", "error"],
+    "no-empty": true,
+    "no-string-literal": true,
+    "no-unreachable": true,
+    "no-unused-expression": false, // This makes `export foo` invalid
+    "no-unused-variable": [true, "react"],
+    "no-var-keyword": true,
+    "radix": true,
+    "triple-equals": [true, "allow-null-check"],
+    "use-isnan": true,
+    "eofline": true,
+    "indent": [true, "spaces"],
+    "linebreak-style": [true, "LF"],
+    "no-trailing-whitespace": true,
+    "trailing-comma": [true, {
+      "multiline": "always",
+      "singleline": "never"
+    }],
+    "class-name": true,
+    "jsdoc-format": true,
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-consecutive-blank-lines": true,
+    "semicolon": [true, "always", "ignore-interfaces"],
+    "variable-name": [true, "ban-keywords" ],
+    "whitespace": [true,
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-typecast"
+    ]
+  }
+}
