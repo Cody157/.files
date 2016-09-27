@@ -1,0 +1,10 @@
+[user]
+#  email = codyestes157@gmail.com
+  email = cestes@ojolabs.com
+  name = Cody Estes
+[push]
+  default = simple
+[core]
+  eol=lf
+  excludesfile = ~/.gitignore
+
