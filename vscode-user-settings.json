@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe",
+//    "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\bash.exe", // only for Windows Bash
 
     "search.exclude": {
         "**/lib": true,
@@ -14,7 +14,8 @@
 
     "files.eol": "\n",
     
-    "typescript.tsdk": "c:/Users/Ojo/AppData/Local/lxss/rootfs/usr/local/lib/node_modules/typescript/lib",
+//    "typescript.tsdk": "c:/Users/Ojo/AppData/Local/lxss/rootfs/usr/local/lib/node_modules/typescript/lib", // Only for Windows Bash
+    "typescript.tsdk": "usr/local/lib/node_modules/typescript/lib",
     "typescript.format.insertSpaceAfterFunctionKeywordForAnyonymousFunctions": false,
 
     "javascript.format.insertSpaceAfterFunctionKeywordForAnyonymousFunctions": false,
