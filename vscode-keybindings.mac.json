@@ -1,0 +1,105 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  /* Find 'markers' (errors/warnings) */
+  { "key": "ctrl+k",
+    "command": "editor.action.marker.prev",
+    "when": "editorTextFocus" },
+  { "key": "ctrl+j",
+    "command": "editor.action.marker.next",
+    "when": "editorTextFocus" },
+
+  /* Change editor group */
+  { "key": "alt+right",
+    "command": "workbench.action.focusNextGroup" },
+  { "key": "alt+left",
+    "command": "workbench.action.focusPreviousGroup" },
+
+  /* Toggle Terminal focus */
+  { "key": "cmd+`",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus" },
+  { "key": "cmd+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus" },
+
+  /* Go to declaration keyboard shorcuts */
+  { "key": "cmd+enter",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorTextFocus" },
+  { "key": "cmd+shift+enter",
+    "command": "editor.action.goToImplementation",
+    "when": "editorTextFocus" },
+
+  /* File explorer vim-ified */
+  // Simple navigation
+  { "key": "j",
+    "command": "list.focusDown",
+    "when": "filesExplorerFocus" },
+  { "key": "k",
+    "command": "list.focusUp",
+    "when": "filesExplorerFocus" },
+  { "key": "h",
+    "command": "list.collapse",
+    "when": "filesExplorerFocus" },
+  { "key": "l",
+    "command": "list.expand",
+    "when": "filesExplorerFocus" },
+  { "key": "g g",
+    "command": "list.focusFirst",
+    "when": "filesExplorerFocus" },
+  { "key": "shift+g",
+    "command": "list.focusLast",
+    "when": "filesExplorerFocus" },
+
+  // Modification
+  { "key": "i",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus" },
+  // These 2 aren't really vim, but I don't know any real mapping here...
+  { "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus" },
+  { "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus" },
+
+  // Copy paste
+  { "key": "shift+y",
+    "command": "copyFilePath",
+    "when": "filesExplorerFocus" },
+  { "key": "y y",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus" },
+  { "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus" },
+  // Obviously this should be cut, but no such operation exists
+  { "key": "d d",
+    "command": "moveFileToTrash",
+    "when": "filesExplorerFocus" },
+  
+  // Search only in selected folder
+  { "key": "/",
+    "command": "filesExplorer.findInFolder",
+    "when": "filesExplorerFocus" },
+
+  // Open and exit
+  { "key": "enter",
+    "command": "list.select",
+    "when": "filesExplorerFocus" },
+  { "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "filesExplorerFocus" },
+
+  /* Some mode switch commands */
+  { "key": "cmd+k t",
+    "command": "workbench.action.terminal.focus" },
+  { "key": "cmd+k e",
+    "command": "workbench.action.focusActiveEditorGroup" },
+  { "key": "cmd+k f",
+    "command": "workbench.files.action.focusFilesExplorer" },
+
+  /* Toggle error/warning view */
+  { "key": "ctrl+shift+`",
+    "command": "workbench.actions.view.problems" }
+]

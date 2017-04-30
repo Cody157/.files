@@ -1,0 +1,59 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "search.exclude": {
+        "**/dist": true,
+        "**/lib": true,
+        "**/node_modules": true,
+        "**/typings": true,
+        "**/target": true
+    },
+
+    "editor.tabSize": 2,
+    //"editor.formatOnType": true,
+    "editor.cursorStyle": "block",
+    "editor.parameterHints": false,
+
+    "files.eol": "\n",
+
+    "tslint.jsEnable": true,
+    
+    // "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.implementationsCodeLens.enabled": true,
+
+    "vim.otherModesKeyBindings": [
+        {
+            "before": [ "`" ],
+            "after": [ "^" ]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        },
+        {
+            "before": ["<space>"],
+            "after": ["/", "esc"]
+        },
+        {
+            "before": ["j"],
+            "after": ["g", "j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g", "k"]
+        }
+    ],
+
+    "vim.insertModeKeyBindings": [
+    ],
+
+    "vim.ignorecase": false,
+    "vim.useSystemClipboard": false,
+    "vim.useSolidBlockCursor": false,
+    "vim.hlsearch": true,
+    "vim.useCtrlKeys": true,
+
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vs-seti",
+    "workbench.welcome.enabled": false
+}
