@@ -409,8 +409,10 @@ map <C-j> :lnext<cr>
 map <C-k> :lprev<cr>
 imap <PageUp> <Esc> 
 imap <PageDown> <Esc> 
-vmap <Tab> I<Tab><Esc>
-vmap <S-Tab> lx
+" vmap <Tab> I<Tab><Esc>
+" vmap <S-Tab> lx
+vmap <Tab> >gv
+vmap <S-Tab> <gv
 vmap / I//<Esc>
 vmap ? lx
 
