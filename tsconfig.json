@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
+        "inlineSourceMap": true,
+        "rootDir": "src",
+        "outDir": "lib",
+        "sourceRoot": "src",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "preserveConstEnums": true,
+        "skipLibCheck": true,
+        "strictNullChecks": true
+    }
+}
